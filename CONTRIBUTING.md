@@ -1,25 +1,67 @@
+# Contributing Guidelines
 
-# Contributing
+## Welcome to the ACSECompendium Contributing Guidelines
 
-The following resources and rules are adopted by the [ACSECompendium](https://github.com/joe-stifler/acse_compendium) repository to ensure consistency and quality in our codebase. Links are aggregated from various sources, in special our ACSE module classes. Feel free to suggest changes and improvements to this document.
+[ACSECompendium Contributing Guide](CONTRIBUTING.md) is designed to facilitate your contributions to our codebase projects. We value and encourage contributions from everyone, particularly those involved in ACSE module classes.
 
-## Main Book Reference:
+### Key Points to Note:
 
-There are many great books out there. But one of my favorite ones is [Software Engineering at Google](https://abseil.io/resources/swe-book/). This book is a collection of best practices and lessons learned from Google's experience in developing software collaboratively. At some point I'll try to summarize the main points of this book in this document. But for now, I highly recommend reading it.
+- **Not Absolute Truths**: The information herein is not exhaustively curated and is subject to change. This guide serves as a quick reference for the [ACSE course](./), not as a comprehensive manual on software development.
 
-## Standards, Rules, and Advices:
+- **Reference Official Documentation**: In case of uncertainty, it's always better to consult the official documentation, relevant books, or content provided by our great professors.
 
-### 1. Git:
-My main advice here is... learn how to quickly use [VS Code extension](https://code.visualstudio.com/docs/sourcecontrol/overview). It'll save you a lot of time and effort. Check [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf) for a quick reference on the most commonly used Git commands. But also, learn how to use [Git CLI](https://git-scm.com/docs) because it's always good to know the basics. 
+- **Open to Suggestions**: Your feedback is crucial. Feel free to open an Issue or Pull Request to propose enhancements to this guide.
 
-### 2. Branch Methodology:
-This repository adopts [Github Flow](https://githubflow.github.io/) as the branch methodology. The `main` branch is the primary and only source of truth. Check [Version Control and Branch Management](https://abseil.io/resources/swe-book/html/ch16.html) for an in-depth discussion on the topic.
+Your participation in this project is highly valued. Let's collaborate to make the ACSECompendium a remarkable resource!
 
-### 3. Commit Message Convention:
-Following the [Conventional Commits](https://www.conventionalcommits.org/) standards, this repository adopts the following commit message convention:
 
-```
-<type>: <short summary> ( <pull-request-reference> )
+---
+
+## Main Book References
+
+One highly recommended resource is [Software Engineering at Google](https://abseil.io/resources/swe-book/), a treasure trove of best practices and insights from Google’s software development experiences. While a detailed summary will be added later, we encourage all contributors to explore this book for a deeper understanding of collaborative software engineering.
+
+---
+
+## Guidelines
+
+Adopting standards in software development is essential for consistency, readability, and collaboration. Standards simplify the complexity of collaborative projects and support automation processes such as [Semantic Versioning](https://semver.org/) and [Releases](https://github.com/semantic-release/semantic-release).
+
+### Git
+
+Understanding Git is crucial for our workflow. While the [VS Code extension for Git](https://code.visualstudio.com/docs/sourcecontrol/overview) is a time-saver, knowing how to use [Git CLI](https://git-scm.com/docs) is fundamental. For quick reference, consult the [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf).
+
+
+<details>
+<summary><b>Relevant Links:</b></summary>
+
+- [Official Git Documentation](https://git-scm.com/docs)
+- [VS Code Git Extension](https://code.visualstudio.com/docs/sourcecontrol/overview)
+- [Pro Git Book](https://git-scm.com/book/en/v2)
+- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+</details>
+
+
+### Branch Methodology
+
+We follow [GitHub Flow](https://githubflow.github.io/), a straightforward and effective branch-based workflow. GitHub Flow is a lightweight, branch-based workflow that emphasizes collaboration, review, and prompt integration. It involves creating branches for new features or fixes, implementing changes, opening PRs for review, revising, merging against main, and then deleting the feature branch upon completion. Ultimately, the `main` branch is the primary source of truth. For a more in-depth discussion, see [Software Engineering at Google book - Version Control and Branch Management Chapter](https://abseil.io/resources/swe-book/html/ch16.html).
+
+<details>
+<summary><b>Relevant Links:</b></summary>
+
+- [GitHub Flow](https://githubflow.github.io/)
+- [Critique of Git Flow](https://georgestocker.com/2020/03/04/please-stop-recommending-git-flow/)
+- [Git Flow Model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Chapter on Version Control and Branch Management](https://abseil.io/resources/swe-book/html/ch16.html)
+</details>
+
+### Commit Message Convention
+
+We adhere to [Conventional Commits](https://www.conventionalcommits.org/) standards:
+
+```markdown
+<type>: <short summary> ( #<pull-request-reference> )
   │           │                       |
   |           |                       └─⫸ The PR reference number.
   |           |
@@ -28,7 +70,8 @@ Following the [Conventional Commits](https://www.conventionalcommits.org/) stand
   └─⫸ Commit Type: feat|feat!|fix|fix!|perf|perf!|refactor|refactor!|test|bench|build|ci|docs|style|chore
 ```
 
-#### Commit Types:
+<details>
+<summary><b>Commit Types:</b></summary>
 
 | Type       | Description                                          | Example                                                        |
 |------------|------------------------------------------------------|----------------------------------------------------------------|
@@ -47,22 +90,31 @@ Following the [Conventional Commits](https://www.conventionalcommits.org/) stand
 | docs       | documentation only changes                          | `docs: update README for Modern Programming Methods`           |
 | style      | changes that do not affect the meaning of the code  | `style: update code formatting for Data Science module`        |
 | chore      | changes to the build process or auxiliary tools and libraries | `chore: update dependencies for Data Science module`        |
+</details>
 
+<details>
+<summary><b>Commit Rules:</b></summary>
 
-#### Rules:
+1) Follow the commit naming convention.
+2) Be concise and descriptive.
+3) Use English.
+4) Start with a verb in imperative mood.
+5) Use present tense.
+6) Avoid ending with a period.
+</details>
+
+<details>
+<summary><b>Relevant Links:</b></summary>
+
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Angular Commit Message Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
+</details>
+
+### Branch Naming Convention
+
+Branch names should be descriptive, following this format:
+
 ```markdown
-1) must follow the commit naming convention.
-2) must be concise and descriptive.
-3) must be written in English.
-4) must start with a verb in imperative mood.
-5) must be written in present tense.
-6) must not end with a period.
-```
-
-### 4. Branch Naming Convention:
-The branching naming convention uses the same types specified in the commit message convention. Its format is specified as follows:
-
-```
 <type>/<issue-reference>/<description>
   │           │                |
   |           |                └─⫸ A short description of the branch's purpose.
@@ -72,191 +124,130 @@ The branching naming convention uses the same types specified in the commit mess
   └─⫸ Branch Type: feat|feat!|fix|fix!|perf|perf!|refactor|refactor!|test|bench|build|ci|docs|style|chore
 ```
 
-#### Examples:
+<details>
+<summary><b>Branch Name Examples:</b></summary>
+
+- `fix/no-ref/update-dependencies`
+- `fix/issue-27/fix-data-sync-error`
+- `test/no-ref/refactor-math-algorithms`
+- `feature/issue-15/implement-regression-analysis`
+</details>
+
+<details>
+<summary><b>Relevant Links:</b></summary>
+
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Simplified Naming Convention](https://dev.to/varbsan/a-simplified-convention-for-naming-branches-and-commits-in-git-il4)
+</details>
+
+### Pull Requests (PRs) and Code Reviews
+
+PRs are vital for proposing and reviewing changes. Reviewers ensure code quality, while contributors address feedback for merge-readiness. According to [Software Engineering at Google - Code Review Chapter](https://abseil.io/resources/swe-book/html/ch09.html), code reviews are key for knowledge sharing and documentation. PR titles should follow the same commit naming convention as before:
 
 ```markdown
-fix/no-ref/update-dependencies
-
-fix/issue-27/fix-data-sync-error
-
-test/no-ref/refactor-math-algorithms
-
-feature/issue-15/implement-regression-analysis
+<type>: <short summary> ( #<pull-request-reference> )
+  │           │                       |
+  |           |                       └─⫸ The PR reference number.
+  |           |
+  │           └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │
+  └─⫸ Commit Type: feat|feat!|fix|fix!|perf|perf!|refactor|refactor!|test|bench|build|ci|docs|style|chore
 ```
 
-### 5. Pull Requests (PRs) and Code Reviews:
+<details>
+<summary><b>PR Description Template:</b></summary>
 
-Pull Requests are used to propose and review changes to the codebase. The person asked as a reviewer is responsible for reviewing the changes, ensuring that only high-quality code is merged into the main branch. The person who opened the PR is responsible for addressing the feedback and making sure that the PR is ready to be merged. Besides, according to [Software Engineering at Google - Code Review Chapter](https://abseil.io/resources/swe-book/html/ch09.html), the code review process is also a great opportunity to share knowledge, learn from each other, and document the changes for the posterity. Now, to ensure that everybody follows the same standards, this repository adopts the following PR template and rules:
-
-**PR Title:**
-```
-- follows the same same commit naming convention.
-```
-
-**PR Description:**
-```markdown
-## Why this PR?
-- Explain the need for this change.
-
-## What Changes?
-- Summarize the proposed changes.
-
-## Tests added?
-- Mention test status.
-
-## Breaking changes created?
-- Note any potential public interface disruptions.
-
-## Additional context:
-- Provide any additional information.
-```
-
-### Example:
-
-**PR Title:**
-```markdown
-perf: optimize pipeline for reduced training time (#1234)
-```
-
-**PR Description:**
 ```markdown
 ## Why this PR?
-- This PR addresses a critical performance issue in our machine learning model training process.
-- During testing, we identified a significant bottleneck in data preprocessing, leading to excessive training times.
+- Explain the need.
 
 ## What Changes?
-- In the `DataPreprocessing` class located in the `data_processing.py` module, we've optimized the data loading and transformation process with:
-    - Multi-threading strategies for parallel data loading, reducing I/O wait times.
-    - Memory-efficient data chunking and caching strategies, minimizing memory usage during processing.
-- These enhancements collectively result in a 40% reduction in training time for our machine learning models, while preserving model accuracy.
+- Summarize changes.
 
 ## Tests added?
-- Yes, we've included comprehensive unit tests for the updated preprocessing pipeline to ensure it functions correctly and does not introduce regressions.
+- State test status.
 
 ## Breaking changes created?
-- No, this optimization does not introduce any breaking changes.
-- Existing code that relies on the data preprocessing pipeline should continue to work as expected.
+- Highlight any disruptions.
 
 ## Additional context:
-- This PR is related to issue #1234 and has been reviewed by our data science team.
-- It significantly improves the efficiency of our model training pipeline and aligns with our goal of reducing model development time.
+- Provide more information.
 ```
+</details>
 
-### Rules:
-- PRs titles must follow the commit naming convention.
-- PRs must have a description that follows the PR template.
-- PRs must be linked to a GitHub issue.
-- PRs must be reviewed by at least one team member that understands the changes.
-- PRs must be tagged with the appropriate labels.
-- PRs must be assigned to the appropriate team member.
-- PRs must be linked to the appropriate milestone.
-- PRs must be linked to the appropriate project.
-- PRs must pass all automated checks before merging.
-- PRs must always be merged using the `Squash and Merge` method.
-- PRs must be up to date with the `main` branch before merging.
+<details>
+<summary><b>PR Description Example:</b></summary>
 
-### 6. Issues:
+```markdown
+## Why this PR?
+- To address performance issues in our ML model training process.
 
-TODO
+## What Changes?
+- Enhanced the DataPreprocessing class in data_processing.py.
 
-### 7. Code Style:
+## Tests added?
+- Comprehensive unit tests were included.
 
-TODO
+## Breaking changes created?
+- None.
 
-### 8. Continuous Integration and Deployment:
+## Additional context:
+- Related to issue #1234 and reviewed by the data science team.
+```
+</details>
 
-TODO
+<details>
+<summary><b>PR Rules:</b></summary>
 
-### 9. Semantic Versioning and Releases:
+- PR titles must follow the commit naming convention.
+- PR descriptions should adhere to the template.
+- Link PRs to relevant issues.
+- Ensure PRs are reviewed by knowledgeable team members.
+- Tag PRs appropriately.
+- Assign PRs to responsible individuals.
+- Link PRs to milestones and projects.
+- PRs must pass automated checks.
+- Use `Squash and Merge` for merging.
+- PRs should be up-to-date with `main`.
 
-TODO
+</details>
 
-### 10. Collaboration and Communication:
+<details>
+<summary><b>Relevant Links:</b></summary>
 
-TODO
+- [GitHub PRs Overview](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+- [PR Templates](https://docs.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository)
+- [PR Labels](https://docs.github.com/en/github/managing-your-work-on-github/applying-labels-to-issues-and-pull-requests)
+- [Assigning PRs](https://docs.github.com/en/github/managing-your-work-on-github/assigning-issues-and-pull-requests-to-other-github-users)
+- [PR Milestones](https://docs.github.com/en/github/managing-your-work-on-github/about-milestones)
+- [PR Projects](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards)
+- [PR Checks](https://docs.github.com/en/actions/guides/about-continuous-integration)
+- [Merge Methods on GitHub](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github)
 
+</details>
 
-## Relevant Resources:
-### 1. Git:
-- [Git Documentation](https://git-scm.com/docs): official Git documentation.
-- [VS Code Git Extension](https://code.visualstudio.com/docs/sourcecontrol/overview): VS Code extension for Git.
-- [Pro Git](https://git-scm.com/book/en/v2): free online book on Git.
-- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf): quick reference on the most commonly used Git commands.
+### Issues
+TODO: Provide guidelines for effective issue management.
 
+### Code Style
+TODO: Define code style guidelines.
 
-### 2. Branch Methodology:
-- [GitHub Flow](https://githubflow.github.io/): a lightweight, branch-based workflow suitable for various projects.
-- [Please stop recommending Git Flow!](https://georgestocker.com/2020/03/04/please-stop-recommending-git-flow/): a critique of Git Flow.
-- [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
-- [Version Control and Branch Management](https://abseil.io/resources/swe-book/html/ch16.html): a chapter from [Software Engineering at Google](https://abseil.io/resources/swe-book) on version control and branch management.
+### Continuous Integration and Deployment
+TODO: Detail our CI/CD practices.
 
-### 3. Branch Naming Convention:
-- [Conventional Commits](https://www.conventionalcommits.org/): a specification for commit messages.
-- [A Simplified Convention for Naming Branches and Commits in Git](https://dev.to/varbsan/a-simplified-convention-for-naming-branches-and-commits-in-git-il4): a simplified version of the Conventional Commits specification.
+### Semantic Versioning and Releases
+TODO: Explain versioning and release management.
 
-### 4. Commit Message Convention:
-- [Conventional Commits](https://www.conventionalcommits.org/): a specification for commit messages.
-- [Angular Commit Message Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines): a guide for commit messages from the Angular project.
+### Semantic Versioning and Releases
 
-### 5. Pull Requests (PRs) and Code Reviews:
-- [GitHub PRs](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests): official GitHub documentation on PRs.
-- [GitHub PR Templates](https://docs.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository): official GitHub documentation on PR templates.
-- [GitHub PR Labels](https://docs.github.com/en/github/managing-your-work-on-github/applying-labels-to-issues-and-pull-requests): official GitHub documentation on PR labels.
-- [GitHub PR Assignees](https://docs.github.com/en/github/managing-your-work-on-github/assigning-issues-and-pull-requests-to-other-github-users): official GitHub documentation on PR assignees.
-- [GitHub PR Milestones](https://docs.github.com/en/github/managing-your-work-on-github/about-milestones): official GitHub documentation on PR milestones.
-- [GitHub PR Projects](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards): official GitHub documentation on PR projects.
-- [GitHub PR Checks](https://docs.github.com/en/actions/guides/about-continuous-integration): official GitHub documentation on PR checks.
-- [Github Merge Methods](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github): official GitHub documentation on PR merge methods.
+TODO: Explain versioning and release management.
 
-### 6. Issues:
+### Collaboration and Communication
 
-TODO
+TODO: Outline collaboration and communication protocols.
 
-### 7. Code Style:
-- [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html): this guide describes the Python style conventions adopted by Google.
+---
 
-- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html): this guide describes the C++ style conventions adopted by Google.
+## Code of Conduct
 
-### 8. Continuous Integration and Deployment:
-
-TODO
-
-### 9. Semantic Versioning and Releases:
-
-TODO
-
-## Further Discussions:
-
-### Why Adopt Standards?
-Adopting standards in software development is crucial for maintaining consistency, improving code readability, and facilitating collaboration. As outlined in [Style Guides and Rules](https://abseil.io/resources/swe-book/html/ch08.html), consistent standards help mitigate the complexity that comes with collaborative projects. Moreover, standardization aids in automation processes like [Semantic Versioning](https://semver.org/) and [Releases](https://github.com/semantic-release/semantic-release), making the development workflow more efficient and predictable.
-
-### GitHub Flow
-GitHub Flow is a lightweight, branch-based workflow suitable for various projects. It emphasizes collaboration, review, and prompt integration.
-
-**Workflow Steps:**
-1. **Creating a Branch**: Separate from the default for new features or fixes.
-2. **Making Changes**: Implement and commit changes to the branch.
-3. **Opening a Pull Request (PR)**: For discussion and review.
-4. **Review and Revision**: Address feedback and revise as needed.
-5. **Merging to the Default Branch**: Once approved, merge the changes.
-6. **Deleting the Branch**: Indicates completion of the work.
-
-This process encourages continuous integration and regular updates, ensuring efficient review and integration of changes.
-
-
-
-## Glossary:
-
-- **Git:** An open-source, distributed version-control system.
-- **GitHub:** A platform for hosting and collaborating on Git repositories.
-- **Commit:** A Git object representing a snapshot of the entire repository. Compressed into a unique SHA identifier.
-- **Branch:** A lightweight, movable pointer to a commit. Allows parallel development of features or fixes.
-- **Clone:** A local copy of a repository with all commits and branches.
-- **Remote:** A common repository on GitHub for team collaboration.
-- **Fork:** A copy of a repository on GitHub owned by a different user.
-- **Pull Request:** A space to compare and discuss differences in a branch. Includes reviews, comments, tests, and more.
-- **HEAD:** Represents the current working directory. Can be moved to different branches, tags, or commits using `git checkout`.
-
-Content borrowed from [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf).
-
-## ⚠️ this file was created with the help of ChatGPT.
+This file was crafted with the assistance of ChatGPT.
