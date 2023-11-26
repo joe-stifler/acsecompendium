@@ -167,7 +167,7 @@ PRs are vital for proposing and reviewing changes. Reviewers ensure code quality
 ## Breaking changes created?
 - Highlight any disruptions.
 
-## Additional context:
+## Additional context?
 - Provide more information.
 ```
 </details>
@@ -188,7 +188,7 @@ PRs are vital for proposing and reviewing changes. Reviewers ensure code quality
 ## Breaking changes created?
 - None.
 
-## Additional context:
+## Additional context?
 - Related to issue #1234 and reviewed by the data science team.
 ```
 </details>
