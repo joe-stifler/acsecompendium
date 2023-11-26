@@ -14,7 +14,7 @@
 
 ---
 
-## Main Book References
+## Main Software Engineering Book References
 
 One highly recommended resource is [Software Engineering at Google](https://abseil.io/resources/swe-book/), a treasure trove of best practices and insights from Google’s software development experiences. While a detailed summary will be added later, we encourage all contributors to explore this book for a deeper understanding of collaborative software engineering.
 
