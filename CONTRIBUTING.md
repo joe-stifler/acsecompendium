@@ -6,14 +6,11 @@
 
 ### Key Points to Note:
 
-- **Not Absolute Truths**: The information herein is not exhaustively curated and is subject to change. This guide serves as a quick reference for the [ACSE course](./), not as a comprehensive manual on software development.
+- **Not Absolute Truths**: although this repository is supposed to be a compendium, the information herein is not exhaustively curated and is subject to change. In especial, this guide serves as a quick reference for the [ACSE course](https://www.imperial.ac.uk/study/courses/postgraduate-taught/applied-computational-science/), not as a comprehensive manual on software development.
 
 - **Reference Official Documentation**: In case of uncertainty, it's always better to consult the official documentation, relevant books, or content provided by our great professors.
 
-- **Open to Suggestions**: Your feedback is crucial. Feel free to open an Issue or Pull Request to propose enhancements to this guide.
-
-Your participation in this project is highly valued. Let's collaborate to make the ACSECompendium a remarkable resource!
-
+- **Open to Suggestions**: Your participation in this project is highly valued. So feel free to open an Issue or Pull Request to propose enhancements to this guide. Let's collaborate to make the ACSECompendium a remarkable resource! 
 
 ---
 
