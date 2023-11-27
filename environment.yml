@@ -1,4 +1,4 @@
-name: acse_compendium
+name: acsecompendium
 channels:
   - defaults
   - conda-forge
