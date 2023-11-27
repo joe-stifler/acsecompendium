@@ -1,4 +1,4 @@
-"""Setup script for acse_compendium package."""
+"""Setup script for acsecompendium package."""
 
 import os
 from setuptools import setup
@@ -12,14 +12,14 @@ def read(fname):
 
 
 setup(
-    name="acse_compendium",
+    name="acsecompendium",
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
     license="MIT",
     long_description=read("README.md"),
-    url="https://github.com/joe-stifler/acse_compendium",
+    url="https://github.com/joe-stifler/acsecompendium",
     description="""Essential best practices and techniques from Imperial College London's MSc in ACSE.""",
     author="Joe",
     author_email="joseribeiro1017@gmail.com",
-    packages=["acse_compendium"],
+    packages=["acsecompendium"],
 )

@@ -15,7 +15,7 @@ jobs:
 
       - uses: conda-incubator/setup-miniconda@v2
         with:
-          activate-environment: acse_compendium
+          activate-environment: acsecompendium
           environment-file: environment.yml
       - run: |
           pip install --upgrade pip
