@@ -9,16 +9,16 @@ TODO
 ### Installatation
 
 ```bash
-# Create the `deepimpact` environment
+# Create the `acsecompendium` environment
 conda env create -f environment.yml
 
-# Activate the `deepimpact` environment
-conda activate deepimpact
+# Activate the `acsecompendium` environment
+conda activate acsecompendium
 
-# Install the `deepimpact` package
+# Install the `acsecompendium` package
 pip install -e .
 
-# Install the `deepimpact` dependencies
+# Install the `acsecompendium` dependencies
 pip install -r requirements.txt
 ```
 
